@@ -1,33 +1,33 @@
 ---
 title: 'Introduction'
-description: 'Example section for showcasing API endpoints'
+description: 'Schedule events directly to Calendly automatically.'
 ---
 
 <Note>
-  If you're not looking to build API reference documentation, you can delete
-  this section by removing the api-reference folder.
+  Disclaimer: This is not an official API from Calendly. While we strive to ensure maximum uptime, changes introduced by Calendly may disrupt the API's functionality at any time. Please keep this in mind when building on top of our API.
 </Note>
 
 ## Welcome
 
-There are two ways to build API documentation: [OpenAPI](https://mintlify.com/docs/api-playground/openapi/setup) and [MDX components](https://mintlify.com/docs/api-playground/mdx/configuration). For the starter kit, we are using the following OpenAPI specification.
+As of the date of this writing (07/21/2024), Calendly does not offer a way to automatically schedule events via its API (see [Calendly API reference](https://developer.calendly.com/api-docs)).
+With our API, you can schedule events directly in Calendly. Learn how to automate your Calendly scheduling.
 
 <Card
-  title="Plant Store Endpoints"
-  icon="leaf"
-  href="https://github.com/mintlify/starter/blob/main/api-reference/openapi.json"
+  title="Create Event Endpoint"
+  icon="calendar"
+  href="/api-reference/endpoint/post"
 >
-  View the OpenAPI specification file
+  View the API documentation
 </Card>
 
 ## Authentication
 
-All API endpoints are authenticated using Bearer tokens and picked up from the specification file.
+All API endpoints are authenticated using API keys passed on through the request header.
 
 ```json
-"security": [
+"header": {
   {
-    "bearerAuth": []
+    "X-API-Key": "<YOUR API KEY GOES HERE>"
   }
-]
+}
 ```
