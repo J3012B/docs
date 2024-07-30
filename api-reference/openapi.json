@@ -108,6 +108,10 @@
 								}
 							}
 						}
+					},
+					"invitee_timezone": {
+						"description": "(Optional) Invitee time zone in IANA format (E.g. 'America/New_York'). This field does not affect the start date of the event `start_time`. It is only displayed in Calendly as the invitees local time zone while scheduling the event. Defaults to `UTC`.",
+						"type": "string"
 					}
 				}
 			},
