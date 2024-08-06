@@ -73,7 +73,7 @@
 						"type": "string"
 					},
 					"start_time": {
-						"description": "ISO timestamp of the start time. E.g. '2021-01-01T09:15:00Z'.",
+						"description": "ISO timestamp of the start time. E.g. '2021-01-01T09:15:00Z' OR '2021-01-01T10:15:00+01:00'. DO NOT include millie seconds. NOT: '2021-01-01T10:15:00.000Z'",
 						"type": "string"
 					},
 					"fields": {
