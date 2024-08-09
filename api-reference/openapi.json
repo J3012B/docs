@@ -112,6 +112,10 @@
 					"invitee_timezone": {
 						"description": "(Optional) Invitee time zone in IANA format (E.g. 'America/New_York'). This field does not affect the start date of the event `start_time`. It is only displayed in Calendly as the invitees local time zone while scheduling the event. Defaults to `UTC`.",
 						"type": "string"
+					},
+					"webhook_url": {
+						"description": "(Optional) URL to send a webhook to after scheduling has completed. If `error` is `null` scheduling was successful. If `error` is not `null` scheduling failed.",
+						"type": "string"
 					}
 				}
 			},
