@@ -116,6 +116,10 @@
 					"webhook_url": {
 						"description": "(Optional) URL to send a webhook to after scheduling has completed. If `error` is `null` scheduling was successful. If `error` is not `null` scheduling failed.",
 						"type": "string"
+					},
+					"metadata": {
+						"description": "(Optional) Metadata to be sent to the webhook. This can be used to identify the scheduling request in the webhook. Unstructured data is allowed.",
+						"type": "object"
 					}
 				}
 			},
