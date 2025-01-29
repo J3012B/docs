@@ -4,8 +4,8 @@ openapi: 'POST /api/scheduled_events'
 ---
 
 <Warning>
-	A status code of 200 does not mean that the event was successfully scheduled. It only means that the request was received successfully.
-	For reliable scheduling completion info, please use the `webhook_url` field in the request to receive a webhook after scheduling has completed. This webhook will contain the scheduling result (`error` is `null` if scheduling was successful).
+	A status code of 200 does not imply sucessful scheduling, but rather that the request was received successfully.
+	For reliable scheduling completion info, please use the `webhook_url` field in the request to receive a webhook on completion.
 </Warning>
 
 <Note>
