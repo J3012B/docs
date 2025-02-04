@@ -69,7 +69,7 @@
 				"type": "object",
 				"properties": {
 					"scheduling_url": {
-						"description": "URL of the scheduling page. E.g. 'https://calendly.com/johndoe/30min'.",
+						"description": "URL of the scheduling page. E.g. 'https://calendly.com/johndoe/30min'. It has to match this exact format. Please don't include any query parameters, trailing slashes or a timestamp in the slug.",
 						"type": "string"
 					},
 					"start_time": {
